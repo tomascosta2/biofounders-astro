@@ -6,8 +6,8 @@ import Faqs from '../components/Faqs.astro';
 
 <Layout>
 	<div class="relative overflow-clip">
-		<div class="absolute blur-[60px] size-[832px] rounded-full bg-[#151F57]/80 -left-[310px] -top-[400px]"></div>
-		<div class="absolute blur-[60px] size-[832px] rounded-full bg-[#151F57]/80 -right-[310px] top-[600px]"></div>
+		<div class="absolute blur-[60px] md:blur-[350px] size-[832px] rounded-full bg-[#151F57]/70 -left-[310px] -top-[400px]"></div>
+		<div class="absolute blur-[60px] md:blur-[350px] size-[832px] rounded-full bg-[#151F57]/70 -right-[310px] top-[600px]"></div>
 		<section class="pb-[60px] pt-[40px] md:py-[60px] relative px-4">
 		  <div class="max-w-[900px] mx-auto">
 			<img class="h-[30px] md:h-[45px] object-contain mx-auto mb-8" src="/images/biofounders.png" alt="Bio Founders" />
@@ -18,23 +18,32 @@ import Faqs from '../components/Faqs.astro';
 			</h1>
 			<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center mt-4 mb-8">Mira el video y descubrí cómo lo hacemos</p>
 			<VideoEmbed />
+			<div>
+				<a href="" class="bf-btn mt-8">Agendar Consulta Gratuita »</a>
+				<p class="text-white/80 text-center mt-2">¡Ultimas plazas del mes!</p>
+			</div>
 		  </div>
 		</section>
 		<section class="relative pt-[60px] pb-[100px] px-4">
-		  <h2 class="text-center text-white font-bold text-[26px] md:text-[36px] max-w-[400px] leading-[120%] mx-auto mb-8">Resultados de nuestro sistema...</h2>
-		  <div class="max-w-[900px] mx-auto">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/l4mhpjya0l?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/88j5ccvet1?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/p824mmmqp4?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/b8xn8u9ucz?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
-			  {/* Cambiar */}
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
-			  <iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
+			<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center mb-4">Hemos ayudado a +100 coaches como vos</p>
+			<h2 class="text-center text-white font-bold text-[26px] md:text-[36px] max-w-[400px] leading-[120%] mx-auto mb-8">Resultados de nuestro sistema...</h2>
+			<div class="max-w-[900px] mx-auto">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/l4mhpjya0l?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/88j5ccvet1?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/p824mmmqp4?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/b8xn8u9ucz?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
+					{/* Cambiar */}
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
+					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
+				</div>
+				<div class="mt-8">
+					<a href="" class="bf-btn">Agendar Consulta Gratuita »</a>
+					<p class="text-white/80 text-center mt-2">¡Ultimas plazas del mes!</p>
+				</div>
 			</div>
-		  </div>
 		</section>
 		<section class="py-[60px] bg-white px-4">
 		  <div class="max-w-[600px] mx-auto">

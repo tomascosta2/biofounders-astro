@@ -30,6 +30,10 @@ body {
 	border: 5px solid #00041A;
 }
 
+.bf-btn {
+	@apply bg-[#FF904D] border-white/30 border-[3px] text-white font-semibold block mx-auto text-center md:w-fit py-4 md:px-[77px] rounded-full;
+}
+
 @media (min-width: 540px) {
 	.--highlight {
 		position: relative;
