@@ -1,0 +1,63 @@
+---
+const CONTENIDOS = [
+	{
+		titulo: "Obligados a emprender",
+		texto: "A diferencia de profesiones tradicionales como un medico, un abogado o un ingeniero, como yoga teachers, no tenemos un lugar donde llevar un cv y qué nos paguen un sueldo. En la masterclass te vamos a mostrar todos los problemas qué esto nos genera y como resolverlos.",
+		imagen: "/images/matias-rebozov-contenido-1.webp"
+	},
+	{
+		titulo: "Salas llenas vs salas vacias",
+		texto: "La diferencia entre yoga teachers qué tienen las salas llevas vs quienes las tienen vacias no es qué sepan mas qué vos, qué sean sabios iluminados o qué tengan 15 posgrados. La diferencia es qué conocen alguno secretos sobre como utilizar las redes sociales para conseguir alumnos. En la masterclass te los vamos a revelar uno por uno…",
+		imagen: "/images/matias-rebozov-contenido-2.webp"
+	},
+	{
+		titulo: "Sistema de 3 pasos",
+		texto: "Sabemos qué como yoga teacher tu interes no esta en el marketing, las ventas o la tecnologia. Por eso decidimos simplificar al maximo esto de conseguir mas alumnos y utilizar las redes sociales de manera simple, eficaz y sin estres.",
+		imagen: "/images/matias-rebozov-contenido-3.webp"
+	},
+	{
+		titulo: "Comunidad de yoguis emprendedores",
+		texto: "El peor error qué puedes cometer como yoga teacher es juntarte con otros yoga teachers a hablar de lo dificil qué es llenar clases, de lo poco comprometidos qué son los alumnos y  a llorar porque los resultados qué queres no llegan. Rompamos con este circulo de escasez. En la masterclass vas a conocer otros yoga teachers qué estan en la misma busqueda qué vos y quieren estar en un circulo virtuoso donde llenar clases es algo qué sucede de manera cotidiana.",
+		imagen: "/images/matias-rebozov-contenido-4.webp"
+	},
+];
+---
+
+<section class="py-[100px] bg-white px-4 relative z-50">
+	<div class="tcp-container">
+		<span class="text-white bg-[#151F57] py-[10px] mb-8 px-8 border-white/30 border-3 rounded-full block w-fit mx-auto">Contenido de la Masterclass</span>
+		<h2
+			class="text-[24px] leading-[120%] md:text-[34px] md:leading-[34px] text-[#111] font-bold max-w-[1080px] mx-auto text-center"
+		>
+		Descubrí cómo Profes de Yoga de Argentina y Chile están sumando entre 10 y 40 alumnos por mes con nuestra guía
+		</h2>
+		<p
+			class="mb-8 mt-4 md:mt-4 md:mb-12 text-[#111]/80 text-center md:text-[16px] text-[14px]"
+		>
+			Descripción
+		</p>
+		<div class="max-w-[1020px] mx-auto">
+			{
+				CONTENIDOS.map((contenido, index) => (
+					<div
+						class="content-item group not-first:pt-8 not-last:pb-8 flex gap-4 md:gap-8 md:mb-0 flex-col-reverse md:flex-row md:even:flex-row-reverse not-last:border-b border-neutral-950/20 md:border-none"
+					>
+						<img src={contenido.imagen} class="rounded-lg bg-gray-400 h-auto md:h-[300px] w-full md:w-1/2" />
+						<div class="flex flex-col justify-center md:w-1/2">
+							<h3 class="group-even:text-end font-bold text-[22px] md:text-[32px] text-[#111] leading-[120%]">
+								{contenido.titulo}
+							</h3>
+							<p class="group-even:text-end text-[#111]/80 mt-4">
+								{contenido.texto}
+							</p>
+						</div>
+					</div>
+				))
+			}
+		</div>
+		<div class="mt-8">
+			<a class="block w-fit mx-auto font-bold text-white border-3 border-white/30 text-center py-5 px-12 rounded-full bg-[#FF904D]" href="#form">Hace clic para reservar tu lugar »</a>
+			<p class="text-[#111]/80 text-center mt-4">¡Ultimas plazas del mes!</p>
+		</div>
+	</div>
+</section>
