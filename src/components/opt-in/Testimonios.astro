@@ -1,34 +1,34 @@
 ---
 const testimonios = [
   {
-    texto: `Testimonio 1`,
-	nombre: `Nombre 1`,
-	columna: 1,
+    texto: `Soy Gabi, del Interior de la Pcia. de Buenos Aires. Antes de implementar el sistema, rondaba los 20/25 alumnos. Hoy, luego de aplicarlo, ya estoy superando los 40 👏✨ Todo el sistema es excelente. Súper completo, práctico y eficiente. Podría destacar el acompañamiento constante de los chicos, y la comunidad con otros profes en el proceso. Si venís remándola en esto de "vender tus clases", este sistema puede solucionar en pocos meses, años de improvisación. Date la oportunidad de DEJARTE GUIAR por profesionales para alcanzar tus objetivos de manera eficaz y planificada.`,
+    nombre: `Gabi`,
+    columna: 1,
   },
   {
-    texto: `Testimonio 2`,
-	nombre: `Nombre 2`,
-	columna: 1,
+    texto: `Soy Julián Cauda, de Josefina (Santa Fe) y les quiero contar que el sistema Biofunders me ayudó a sumar alumnos a mis clases de yoga de manera rápida y liviana. Hace tan solo 2 meses que comencé con el programa y ya he podido sumar entre 10 y 12 alumnos a mis clases. Además el programa me brindó una muy amplia variedad de herramientas digitales para hacer crecer mi negocio. Si estás pensando en crecer en las redes y sumar alumnos a tus clases a través del marketing digital, no dudes que este programa es para vos.`,
+    nombre: `Julián Cauda`,
+    columna: 2,
   },
   {
-    texto: `Testimonio 2`,
-	nombre: `Nombre 2`,
-	columna: 2,
+    texto: `Ya finalizó la publicación y tengo los 3 cursos completos. Además doy Yoga y Arte para niños, y estoy pensando una estrategia para impulsar esas clases.. no sé si querés charlamos en algún momentito sobre eso. Estoy viendo por otro lado si abro otro día de adultos.`,
+    nombre: `Vanina Sack`,
+    columna: 2,
   },
   {
-    texto: `Testimonio 2`,
-	nombre: `Nombre 2`,
-	columna: 2,
+    texto: `Sólo en la primera semana de publicidad ya llené mis clases disponibles. Ahora voy a abrir uno o dos horarios nuevos.`,
+    nombre: `Andre`,
+    columna: 1,
   },
   {
-    texto: `Testimonio 2`,
-	nombre: `Nombre 2`,
-	columna: 3,
+    texto: `Desde que ingrese al programa se han sumado 20 nuevos alumnos, se ha duplicado mi ingreso economico y tengo la serteza de que ahora yo se hacer que llegue gente y antes no la tenia.`,
+    nombre: `Andrea`,
+    columna: 3,
   },
   {
-    texto: `Testimonio 2`,
-	nombre: `Nombre 2`,
-	columna: 3,
+    texto: `En 15 dias consegui 15 alumnos nuevos. En una semana me han llegado a entrar 120 mensajes y en 20 dias he tenido 10 reserbas estando en un mes que no es temporada alta. Le super recomiendo a quien esta buscando crecer que se sume al programa ya que te ayuda a tener visibilidad tanto si estas en un pueblito pequeño como si das clases online.`,
+    nombre: `Vani`,
+    columna: 3,
   },
 ];
 
@@ -39,10 +39,10 @@ const col3 = testimonios.filter(t => t.columna === 3);
 
 <section class="py-[60px] md:py-[80px] bg-white">
 	<div class="max-w-[1040px] mx-auto px-4">
-		<!-- <span class="text-white bg-[#151F57] py-[10px] mb-8 px-8 border-white/30 border-3 rounded-full block w-fit mx-auto">Testimonios</span>
+		<span class="text-white bg-[#151F57] py-[10px] mb-8 px-8 border-white/30 border-3 rounded-full block w-fit mx-auto">Testimonios</span>
 		<h2 class="text-[24px] leading-[120%] md:text-[40px] md:leading-[50px] text-[#111] font-bold max-w-[740px] mx-auto text-center">
 			Qué opinan los alumnos que tomaron la Masterclass:
-		</h2> -->
+		</h2>
 		<div class="grid md:grid-cols-3 gap-4 mt-8">
 			{[col1, col2, col3].map((col) => (
 			<div class="columns-1">
