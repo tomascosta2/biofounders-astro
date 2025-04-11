@@ -15,14 +15,30 @@
 							class="w-full p-[16px] rounded-[6px] bg-[#fff] mt-2 text-[#111]/60 placeholder:text-[14px] font-normal"
 						/>
 					</label>
-					<label for="phone" class="text-[#fff] font-medium">
-						Tu numero de whatsapp
-						<input
-							type="tel"
-							name="phone"
-							placeholder="+54 2616841853"
-							class="w-full p-[16px] rounded-[6px] bg-[#fff] mt-2 text-[#111]/60 placeholder:text-[14px] font-normal"
-						/>
+					<label
+						for="phone"
+						class="text-[#fff] font-medium block"
+					>
+						Tu número de WhatsApp
+						<div class="flex gap-2 mt-2">
+							<select
+								name="countryCode"
+								id="countryCode"
+								class="p-[16px] rounded-[6px] bg-[#fff] text-[#111]/80 font-normal"
+							>
+								<option value="+54">🇦🇷 AR</option>
+								<option value="+56">🇨🇱 CL</option>
+								<option value="+57">🇨🇴 CO</option>
+								<option value="+52">🇲🇽 MX</option>
+							</select>
+							<input
+								type="tel"
+								name="phone"
+								id="phoneInput"
+								placeholder="2616841853"
+								class="w-full p-[16px] rounded-[6px] bg-[#fff] text-[#111]/60 placeholder:text-[14px] font-normal"
+							/>
+						</div>
 					</label>
 					<button
 						type="submit"
