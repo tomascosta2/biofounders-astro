@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 import Faqs from '../components/Faqs.astro';
+
+const calendly = Astro.props.calendly;
 ---
 
 <Layout>
@@ -11,8 +13,11 @@ import Faqs from '../components/Faqs.astro';
 		<section class="pb-[60px] pt-[40px] md:py-[60px] relative px-4">
 		  <div class="max-w-[900px] mx-auto">
 			<img class="h-[30px] md:h-[45px] object-contain mx-auto mb-8" src="/images/biofounders.png" alt="Bio Founders" />
-			<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center mb-4">+100 yoga teachers trabajando con nosotros</p>
-			<h1 class="text-[22px] leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
+			<div class="flex gap-4 flex-col-reverse md:flex-row items-center justify-center mb-4">
+				<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center">+170 yoga teachers trabajando con nosotros</p>
+				<img class="h-[15px] md:h-[17px]" src="/images/banderas.webp" alt="Banderas">
+			</div>
+			<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
 			  Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus
 			  clases de Yoga con nuestro Sistema de Anuncios
 			</h1>
@@ -24,43 +29,14 @@ import Faqs from '../components/Faqs.astro';
 				</p>
 				<VideoEmbed />
 			</div>
-			<div>
-				<a href="" class="bf-btn mt-8">Agendar Entrevista Ahora »</a>
+			<!-- <div>
+				<a href="#calendly" class="bf-btn mt-8">Agendar Entrevista Ahora »</a>
 				<p class="text-white/80 text-center mt-2">¡Solos 5 cupos por semana!</p>
-			</div>
+			</div> -->
 		  </div>
 		</section>
-		<section class="relative pt-[60px] pb-[100px] px-4">
-			<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center mb-4">Hemos ayudado a +100 teachers como vos</p>
-			<h2 class="text-center text-white font-bold text-[26px] md:text-[36px] max-w-[400px] leading-[120%] mx-auto mb-8">Resultados de nuestro sistema...</h2>
-			<div class="max-w-[900px] mx-auto">
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/l4mhpjya0l?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/88j5ccvet1?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/p824mmmqp4?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/b8xn8u9ucz?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
-					{/* Cambiar */}
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/g0tibj3njb?web_component=true&seo=true&videoFoam=false"></iframe>
-					<iframe loading="lazy" class="aspect-[9/16] w-full" src="https://fast.wistia.net/embed/iframe/782997tbkq?web_component=true&seo=true&videoFoam=false"></iframe>
-				</div>
-				<div class="mt-8">
-					<a href="" class="bf-btn">Agendar Entrevista Ahora »</a>
-					<p class="text-white/80 text-center mt-2">¡Solos 5 cupos por semana!</p>
-				</div>
-			</div>
-		</section>
-		<section class="py-[60px] bg-white px-4">
-		  <div class="max-w-[600px] mx-auto">
-			<p class="text-[#111]">
-			  Copy muy bueno
-			</p>
-		  </div>
-		</section>		
-		<Faqs />
-		<img class="h-[35px] md:h-[45px] object-contain mx-auto mb-8" src="/images/biofounders.png" alt="Bio Founders" />
-		<p class="text-white/80 text-[14px] md:text-[16px] text-center pb-8">© Biofounders 2025. Todos los derechos reservados.</p>
+		<p class="text-white/80 text-[14px] md:text-[16px] text-center py-8">© Biofounders 2025. Todos los derechos reservados.</p>
+
 		<script is:inline >
 		  	!function(f,b,e,v,n,t,s)
 			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
