@@ -1,0 +1,57 @@
+---
+const BENEFICTS = [
+  {
+    icono: '/images/icono-1.svg',
+    titulo: 'Más alumnos, sin depender del boca a boca',
+    texto: 'Un sistema claro para atraer personas comprometidas a tus clases y talleres.'
+  },
+  {
+    icono: '/images/icono-2.svg',
+    titulo: 'Estrategia clara, sin improvisar',
+    texto: 'Te llevás un paso a paso concreto para llenar tu agenda cada mes.'
+  },
+  {
+    icono: '/images/icono-3.svg',
+    titulo: 'Ingresos estables, incluso sin dar más clases',
+    texto: 'Aprendé a estructurar tu oferta para dejar de vivir al día.'
+  },
+  {
+    icono: '/images/icono-4.svg',
+    titulo: 'Vendé sin sentirte incómodo',
+    texto: 'Comunicá tu valor con autenticidad, sin sentir que estás forzando nada.'
+  },
+  {
+    icono: '/images/icono-5.svg',
+    titulo: 'Destacá entre tantos profes',
+    texto: 'Construí una marca personal que conecte y te diferencie sin tener que gritar en redes.'
+  },
+  {
+    icono: '/images/icono-6.svg',
+    titulo: 'Ordená tu negocio de yoga',
+    texto: 'Organizá horarios, cobros y alumnos con herramientas simples y efectivas.'
+  }
+];
+
+---
+<section class="py-[80px]">
+	<div class="max-w-[1000px] mx-auto">
+		<h2 class="w-[420px] mx-auto text-white text-[34px] text-center leading-[100%] font-bold">Unite a Yoguis Emprendedores</h2>
+		<div class="grid grid-cols-3 gap-4 mt-8">
+			{
+				BENEFICTS.map((benefict) => {
+					return (
+						<div class="bg-[#151F57] px-8 pt-[50px] pb-[80px] rounded-[16px]">
+							<img src={benefict.icono} alt={benefict.titulo}>
+							<h3 class="font-semibold leading-[100%] my-4 text-white text-[22px]">{benefict.titulo}</h3>
+							<p class="text-white leading-[110%]">{benefict.texto}</p>
+						</div>
+					)
+				})
+			}
+		</div>	
+		<div class="mt-8">
+			<button class="open-popup cursor-pointer mx-auto block w-full md:w-fit font-bold text-white border-3 border-white/30 text-center py-5 px-12 rounded-full bg-[#FF904D]">Hace clic para reservar tu lugar »</button>
+			<p class="text-[#FFF]/80 text-center mt-4">¡Ultimas plazas del mes!</p>
+		</div>
+	</div>
+</section>

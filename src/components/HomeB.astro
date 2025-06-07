@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 import Faqs from '../components/Faqs.astro';
+import Testimonios from '../components/Testimonios.astro';
 
 const calendly = Astro.props.calendly;
 ---
@@ -29,13 +30,20 @@ const calendly = Astro.props.calendly;
 				</p>
 				<VideoEmbed />
 			</div>
+			<div class="mt-8 w-full md:w-fit mx-auto">
+				<button class="open-popup cursor-pointer block w-full md:w-fit font-bold text-white border-3 border-white/30 text-center py-5 px-12 rounded-full bg-[#FF904D]">Hace clic para reservar tu lugar »</button>
+				<p class="text-white/80 text-center mt-4">¡Ultimas plazas del mes!</p>
+			</div>
 			<!-- <div>
 				<a href="#calendly" class="bf-btn mt-8">Agendar Entrevista Ahora »</a>
 				<p class="text-white/80 text-center mt-2">¡Solos 5 cupos por semana!</p>
 			</div> -->
 		  </div>
 		</section>
-		<p class="text-white/80 text-[14px] md:text-[16px] text-center py-8">© Escuela de yoguis emprendedores 2025. Todos los derechos reservados.</p>
+
+		<Testimonios />
+
+		<p class="text-white/80 text-[14px] md:text-[16px] text-center py-[100px] pb-8">© Escuela de yoguis emprendedores 2025. Todos los derechos reservados.</p>
 
 		<script is:inline >
 		  	!function(f,b,e,v,n,t,s)
@@ -52,5 +60,5 @@ const calendly = Astro.props.calendly;
 		<noscript><img height="1" width="1" style={{ 'display': 'none' }}
 		  src="https://www.facebook.com/tr?id=1481141145776631&ev=PageView&noscript=1"
 		/></noscript>
-	</div>
+	  </div>
 </Layout>
