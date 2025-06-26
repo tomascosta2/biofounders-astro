@@ -2,7 +2,7 @@
 const path = Astro.url.pathname;
 ---
 
-{path === '/' && (
+{(path === '/' || path === '/home') && (
   <div>
     <!-- Código del video para / -->
     <vturb-smartplayer id="vid-685b26888e4c3f31e8aeacf8" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> 
