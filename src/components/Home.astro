@@ -4,6 +4,8 @@ import VideoEmbed from '../components/VideoEmbed.astro';
 import Faqs from '../components/Faqs.astro';
 
 const calendly = Astro.props.calendly;
+
+const path = Astro.url.pathname;
 ---
 
 <Layout>
@@ -17,10 +19,18 @@ const calendly = Astro.props.calendly;
 				<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center">+170 yoga teachers trabajando con nosotros</p>
 				<img class="h-[15px] md:h-[17px]" src="/images/banderas.webp" alt="Banderas">
 			</div>
-			<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
-			  Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus
-			  clases de Yoga con nuestro Sistema de Anuncios
-			</h1>
+			{!path.includes('/b') && (
+				<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
+					Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus
+					clases de Yoga con nuestro Sistema de Anuncios
+				</h1>
+			)}
+			{path.includes('/b') && (
+				<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
+					Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus clases 
+					de Yoga Presenciales con un Sistema Simple
+				</h1>
+			)}
 			<!-- <p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center mt-4 mb-8">Mira el video y descubrí cómo lo hacemos</p> -->
 			<div class="mt-8">
 				<p class="flex text-[18px] gap-2 p-2 items-center justify-center text-center bg-[#0c7eff] text-white font-semibold rounded-tr-lg rounded-tl-lg">
