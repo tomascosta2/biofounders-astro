@@ -2,7 +2,13 @@
 const path = Astro.url.pathname;
 ---
 
-{(path === '/' || path === '/home') && (
+{(path === '/') && (
+  <div>
+    <vturb-smartplayer id="vid-685b26888e4c3f31e8aeacf8" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/e6c08ca4-cb83-46ad-9564-d95d0d125100/players/685b26888e4c3f31e8aeacf8/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+  </div>
+)}
+
+{(path === '/home') && (
   <div>
     <vturb-smartplayer id="vid-685b26888e4c3f31e8aeacf8" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/e6c08ca4-cb83-46ad-9564-d95d0d125100/players/685b26888e4c3f31e8aeacf8/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
   </div>
