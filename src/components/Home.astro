@@ -19,7 +19,7 @@ const path = Astro.url.pathname;
 				<p class="text-white/80 font-medium text-[16px] md:text-[20px] text-center">+170 yoga teachers trabajando con nosotros</p>
 				<img class="h-[15px] md:h-[17px]" src="/images/banderas.webp" alt="Banderas">
 			</div>
-			{!path.includes('/b') && (
+			{(!path.includes('/b') && !path.includes('/home')) && (
 				<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
 					Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus
 					clases de Yoga con nuestro Sistema de Anuncios
@@ -28,6 +28,12 @@ const path = Astro.url.pathname;
 			{path.includes('/b') && (
 				<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
 					Sumamos entre <span class="--highlight">10 y 40 alumnos nuevos</span> por mes para tus clases 
+					de Yoga Presenciales con un Sistema Simple
+				</h1>
+			)}
+			{path.includes('/home') && (
+				<h1 class="text-[22px] text-white leading-[26px] md:text-[44px] font-bold md:leading-[42px] text-center">
+					Sumamos entre <span class="--highlight">20 y 40 alumnos nuevos</span> por mes para tus clases 
 					de Yoga Presenciales con un Sistema Simple
 				</h1>
 			)}
